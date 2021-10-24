@@ -6,7 +6,7 @@
 /*   By: mmicheli <micheli@student.21-school.ru>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/07 14:29:25 by mmicheli          #+#    #+#             */
-/*   Updated: 2021/10/07 15:14:18 by mmicheli         ###   ########.fr       */
+/*   Updated: 2021/10/24 20:02:16 by mmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,19 +18,5 @@ void	ft_bzero(void *s, size_t n)
 
 	i = 0;
 	while (i < n)
-	{
-		((char *)s)[i] = 0;
-		i++;
-	}
+		((char *)s)[i++] = 0;
 }
-
-/*
-#include "stdio.h"
-
-int main(void)
-{
-	char str[10] = "123456";
-	ft_bzero(str, 3);
-	printf("%s\n", str);
-}
- */

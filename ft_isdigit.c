@@ -6,7 +6,7 @@
 /*   By: mmicheli <micheli@student.21-school.ru>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 19:26:46 by mmicheli          #+#    #+#             */
-/*   Updated: 2021/10/11 14:11:30 by mmicheli         ###   ########.fr       */
+/*   Updated: 2021/10/24 20:02:16 by mmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-
-/*
-#include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
-{
-	printf("KRAFT ISDIGIT OUTPUT: %d\n", ft_isdigit('9'));
-	printf("STANDARD ISDIGIT OUTPUT: %d\n", isdigit('9'));
-}*/

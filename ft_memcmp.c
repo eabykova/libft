@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmicheli <micheli@student.21-school.ru>    +#+  +:+       +#+        */
+/*   By: mmicheli <mmicheli@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/07 18:14:21 by mmicheli          #+#    #+#             */
-/*   Updated: 2021/10/07 18:46:36 by mmicheli         ###   ########.fr       */
+/*   Created: 2021/10/21 13:19:12 by mmicheli          #+#    #+#             */
+/*   Updated: 2021/10/24 20:02:16 by mmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char s1[10] = "1205678";
-	char s2[10] = "12345678";
-	int i = 4;
-	printf("STANDARD FT: %d\n", memcmp(s1, s2, i));
-	printf("KRAFT FT: %d\n", ft_memcmp(s1, s2, i));
-}*/

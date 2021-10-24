@@ -6,7 +6,7 @@
 /*   By: mmicheli <micheli@student.21-school.ru>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/08 15:12:45 by mmicheli          #+#    #+#             */
-/*   Updated: 2021/10/08 15:55:16 by mmicheli         ###   ########.fr       */
+/*   Updated: 2021/10/24 20:02:16 by mmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,13 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t	i;
-
-	i = 0;
-	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n)
-		i++;
-	return ((int)((unsigned char)s1[i] - (unsigned char)s2[i]));
+	if (n == 0)
+		return (0);
+	while (*s1 == *s2 && *s1 && n - 1 > 0)
+	{
+		s1++;
+		s2++;
+		n--;
+	}
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char	str1[30] = "erawrfafa   fa awera ";
-	char	str2[30] = "erawrfafa   fa awera ";
-
-	printf("STANDARD STRNCMP: %d\n", strncmp(str1, str2, 10));
-	printf("KRAFT STRNCMP: %d\n", ft_strncmp(str1, str2, 10));
-}
-*/

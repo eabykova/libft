@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmicheli <micheli@student.21-school.ru>    +#+  +:+       +#+        */
+/*   By: mmicheli <mmicheli@student.21-school.ru>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/07 15:56:58 by mmicheli          #+#    #+#             */
-/*   Updated: 2021/10/07 16:11:17 by mmicheli         ###   ########.fr       */
+/*   Created: 2021/10/21 13:19:12 by mmicheli          #+#    #+#             */
+/*   Updated: 2021/10/24 20:02:16 by mmicheli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
-{
-	printf("KRAFT ISALPHA OUTPUT: %d\n", ft_isalpha('9'));
-	printf("STANDARD ISALPHA OUTPUT: %d\n", isalpha('9'));
-}*/
